@@ -12,7 +12,7 @@
 
 ### Quick Reminder - How we write a function
 
-```
+```Javascript
 function myFunction(a, b, c) {
     return a + b + c;
 }
@@ -22,7 +22,7 @@ function myFunction(a, b, c) {
 
 - Since a function is an object, it can be stored in a variable like anything else (ex: object, string)
 
-```
+```Javascript
 let myFunction = function(a, b, c) {
     return a + b + c;
 };
@@ -34,7 +34,7 @@ let myFunction = function(a, b, c) {
 - The function written in the last section is also known as an *anonymous* function
 - Sometimes it's easier or makes more sense to use a function without defining it first 
 
-```
+```Javascript
 console.log(function(a, b, c) {
     return a + b + c;
 });
@@ -51,7 +51,9 @@ words.filter(word => word.length > 6);
 - The function keyword can be used to define a function inside an expression.
 
 - You can also define functions using the Function constructor and a function declaration.
-```
+
+
+```Javascript
 const someFunction = function(){
     console.log("Hello!")
 }
@@ -67,7 +69,7 @@ someFunction()
 - We *reference* a function when we pass it like any other variable
 - To signal to JS that we want to reference a function we just use its name
 
-```
+```Javascript
 console.log(add(1,2)); // this would log 3
 
 console.log(add); // this would log something like [Function: add]
@@ -102,7 +104,7 @@ console.log(add); // this would log something like [Function: add]
 - they can help us make things a little more readable
 - they also help us deal with some scope issues (but don't worry about that right now)
 
-```
+```Javascript
 // our old-school function
 let myFunc = function(a, b, c) {
   return a + b + c;
